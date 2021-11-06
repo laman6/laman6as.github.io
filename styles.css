@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Shadows+Into+Light&display=swap'); url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Shadows+Into+Light&display=swap');import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:wght@300&family=Shadows+Into+Light&display=swap');
+* {
+  /* for all text in css */
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Header section */
+.header {
+  /* class sepicifier */
+  height: 60vh;
+  color: white;
+  background: url(assets/header.background.jpg) center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* for vertically align items*/
+  text-align: center;
+}
+
+.header div {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 50px 70px;
+}
+
+.header h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 65px;
+}
+
+@media screen and (max-width: 800px) /* media gets attached if screen is smaller than 800px*/{
+  .header div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding 0;
+    justify-content: center;
+  }
+
+}
+
+.header{
+  height: 90vh;
+}
+
+/* About section */
+.about{
+  max-width: 900px;
+  /* margin: 30px 70px 50px 50px;  distances from top right bottom left*/
+  margin: 50px auto 50px auto;
+  text-align: center;
+
+}
+
+.about h2{
+  font-size: 40px;
+}
+
+.about div{
+  display: flex;
+  text-align: justify;
+  column-gap: 20px;
+  margin-bottom: 30px;
+
+}
+
+.about div p{
+  flex: 1;
+
+}
+
+.about a{
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.about a:hover{
+  background-color: white;
+  color: black;
+}
+
+h2{
+  font-size: 40px;
+  margin-bottom: 30px;
+
+}
+
+@media screen and (max-width: 800px) {
+  .about div{
+    flex-direction: column; 
+    row-gap: 20px;
+  }
+}
+
+section {
+  padding: 30px 5%; /* percent because for mobile we want less padding for the left and right than the desktop*/
+  
+}
+
+/*skills*/
+
+.skills{
+  background: url(assets/header.background.jpg) center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 0px;
+
+}
+
+.skills ul li{
+  list-style: none;
+  flex: 1;
+}
+
+.skills ul{
+  display: flex;
+  column-gap: 20px;
+  justify-content: space-around;
+}
+
+.skills-wrapper{
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px 5%;
+}
+
+.skills .title {
+  font-size: 20px;
+  margin: 10px 0 20px; /*first one top last one left*//* top right bottom left*/
+}
+
+@media screen and (max-width: 800px){
+  .skills ul{
+    flex-direction: column;
+    row-gap: 30px;
+  }
+}
+
+/*Projects*/
+.projects ul li{
+  background: url(assets/project1.jpg) center;
+  background-size: cover;
+  list-style: none;
+  height: 300px;
+  min-width: 500px;
+  width: 45%;
+  /*flex:1;*/
+}
+
+.projects ul{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.projects h2{
+  text-align: center;
+}
+
+.projects p{
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+.projects li:hover p{
+  /*width: 100%;
+  height: 100%;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;*/
+  display: flex;
+}
+
+@media screen and (max-width: 800px) {
+  .projects ul li{
+    width: 100%;
+    min-width: 100%;
+  }
+}
+
+.projects li: p{
+  display: flex;
+}
